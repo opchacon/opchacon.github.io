@@ -1,10 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Pages Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic homepage of [Your Name]: research, publications, teaching, and contact information.">
+  <title>[Your Name] | Academic Homepage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This page is hosted completely free on GitHub Pages.</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="#home">[Your Name]<span class="site-name-dot">.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Academic homepage</p>
+        <h1 id="hero-title">[Your Name]</h1>
+        <p class="hero-subtitle">[Your academic position] · [Your institution]</p>
+        <p class="hero-intro">Welcome! I work on [your main research area]. This website collects my research, publications, teaching, and other academic activities.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">→</span></a>
+          <a class="button button-text" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <aside class="profile-card" aria-label="Academic profile summary">
+        <!-- Later, replace the initials below with a profile photo if you want one. -->
+        <div class="avatar" aria-hidden="true">YN</div>
+        <p class="profile-label">Current affiliation</p>
+        <p class="profile-value">[Department or research group]<br>[University or institution]</p>
+        <div class="profile-divider"></div>
+        <p class="profile-label">Location</p>
+        <p class="profile-value">[City, Country]</p>
+      </aside>
+    </section>
+
+    <div class="container">
+      <div class="announcement" role="note">
+        <span class="announcement-heading">Latest update</span>
+        <p>[A new paper, conference talk, course, or other announcement can go here.]</p>
+      </div>
+    </div>
+
+    <section class="section container" id="about" aria-labelledby="about-heading">
+      <div class="section-heading">
+        <p class="eyebrow">01 / Introduction</p>
+        <h2 id="about-heading">About me</h2>
+      </div>
+      <div class="section-content prose">
+        <p>I am [your position] at [your institution]. My academic interests include [a few research topics].</p>
+        <p>[Add a short paragraph about your background, what motivates your work, and any academic information you would like visitors to know.]</p>
+      </div>
+    </section>
+
+    <section class="section container" id="research" aria-labelledby="research-heading">
+      <div class="section-heading">
+        <p class="eyebrow">02 / Interests</p>
+        <h2 id="research-heading">Research</h2>
+      </div>
+      <div class="section-content prose">
+        <p>My research focuses on [describe your central research questions in two or three sentences].</p>
+        <div class="topics" aria-label="Research topics">
+          <span class="topic">[Research topic 1]</span>
+          <span class="topic">[Research topic 2]</span>
+          <span class="topic">[Research topic 3]</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="publications" aria-labelledby="publications-heading">
+      <div class="section-heading">
+        <p class="eyebrow">03 / Work</p>
+        <h2 id="publications-heading">Publications</h2>
+      </div>
+      <div class="section-content prose">
+        <h3>Preprints</h3>
+        <p class="placeholder-note">[List your preprints here. For each item, you can include a title, coauthors, year, and links to arXiv or a PDF.]</p>
+        <h3>Published papers</h3>
+        <p class="placeholder-note">[List your papers here, or use this area for selected publications. We can format these as a bibliography later.]</p>
+      </div>
+    </section>
+
+    <section class="section container" id="teaching" aria-labelledby="teaching-heading">
+      <div class="section-heading">
+        <p class="eyebrow">04 / Classroom</p>
+        <h2 id="teaching-heading">Teaching</h2>
+      </div>
+      <div class="section-content prose">
+        <p>[Add current or past courses, semesters, institutions, and links to course material if applicable.]</p>
+      </div>
+    </section>
+
+    <section class="section container" id="activities" aria-labelledby="activities-heading">
+      <div class="section-heading">
+        <p class="eyebrow">05 / Academic life</p>
+        <h2 id="activities-heading">Talks &amp; activities</h2>
+      </div>
+      <div class="section-content prose">
+        <p>[Add seminars, conference talks, workshops, outreach, or events you've helped organize.]</p>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-heading">
+        <p class="eyebrow">06 / Say hello</p>
+        <h2 id="contact-heading">Contact</h2>
+      </div>
+      <div class="section-content prose">
+        <p>Feel free to contact me about research, teaching, or academic collaboration.</p>
+        <p><strong>Email:</strong> [your.email@institution.edu]</p>
+        <p><strong>Profiles:</strong> <a href="https://github.com/opchacon">GitHub</a> · [Add Google Scholar / ORCID / other links]</p>
+        <!-- Once you upload a PDF named cv.pdf inside a 'files' folder,
+             you can add a link such as: <a href="files/cv.pdf">Download my CV</a> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 [Your Name]</span>
+      <span>Made with HTML &amp; CSS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
 </body>
 </html>
